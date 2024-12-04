@@ -1,7 +1,7 @@
 @extends('layout.index')
 @section('content')
 <section id="customers-reviews" class="position-relative padding-large">
-    <div class="container col-lg-12 col-xl-9 p-5">
+    <div class="container col-lg-12 col-xl-9 p-md-5">
         <div class="row">
             <!-- Kolom Gambar -->
             <div class="col-xxl-4 col-lg-4 col-md-4 pb-3 pb-lg-0 img-col" style="padding: unset;">

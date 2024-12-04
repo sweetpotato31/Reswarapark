@@ -1682,3 +1682,135 @@ select#input-sort {
     height: 3rem;
     color: rgb(0, 0, 0) !important
 }
+
+#header-nav{
+  background: linear-gradient(to right, #6f6f5f, #e6e6de); 
+  padding-bottom: 20px; 
+  padding-top: 10px; 
+  border-bottom-left-radius: 50% 100%; 
+  border-bottom-right-radius: 50% 100%;
+}
+.navbar-brand .logo{
+  display: none;
+}
+/* RESPONSIVE NAVBAR*/
+@media only screen and (max-width: 992px) {
+  #header-nav{
+    border-radius: unset !important;
+  }
+  .navbar-brand .logo{
+    display: block;
+  }
+
+}
+@media only screen and (max-width: 1300px){
+  .navbar-nav .nav-item a.nav-link{
+    font-size: 14px;
+  }
+  #header-nav{
+    border-bottom-left-radius: 40% 100%; 
+    border-bottom-right-radius: 40% 100%;
+  }
+}
+
+/* RESPONSIVE FOOTER */
+.footer-top-area .footer-menu p, .footer-top-area .footer-menu a{
+  font-size: 14px;
+  color: #ebebeb;
+}
+.footer-top-area .footer-menu h6{
+  color: #ebebeb;
+}
+@media only screen and (max-width: 576px){
+  .footer-menu img{
+    display: none;
+  }
+}
+@media only screen and (max-width: 992px) {
+  .footer-top-area .footer-menu p, .footer-top-area .footer-menu a{
+    font-size: 10px;
+  }
+  .footer-top-area .footer-menu h6{
+    font-size: 13px;
+  }
+}
+
+/* RESPONSIVE ARTIKEL */
+#container-detail-artikel{
+  max-width: 936px;
+}
+.image-artikel{
+  background: linear-gradient(to right, #6f6f5f, #e6e6de); 
+  border-bottom:solid 1px rgba(0, 0, 0, 0.034); 
+  overflow: hidden;
+  border-radius:15px 15px 0 0
+}
+#footer-detail-artikel{
+  background: linear-gradient(to right, #6f6f5f, #e6e6de);
+  border-radius:0 0 15px 15px
+}
+@media only screen and (max-width: 768px){
+
+}
+@media only screen and (max-width: 992px) {
+  #artikel-desc{
+    max-width: unset;
+  }
+  #container-detail-artikel{
+    padding:unset
+  }
+  .image-artikel, #footer-detail-artikel{
+    border-radius: unset;
+  }
+}
+
+/* RESPONSIVE KEUNGGULAN */
+#title-keunggulan h2{
+  font-size:43px;
+  color: black;
+}
+
+#desc-keunggulan{
+  max-width: 42%;
+}
+#desc-keunggulan p{
+  font-size: 17px;
+  color:#818274;
+  font-family: 'SortsMillGoudy-Regular'
+}
+@media only screen and (max-width: 768px) {
+  #title-keunggulan h2{
+    font-size: 30px;
+  }
+  #desc-keunggulan p{
+    font-size: 14px;
+  }
+}
+@media only screen and (max-width: 1400px) {
+  #desc-keunggulan{
+    max-width:  80%;
+  }
+}
+
+/* RESPONSIVE LOKASI */
+#title-lokasi{
+  font-size:43px;
+  color: black;
+}
+#content-lokasi{
+  max-width: 62%;
+}
+@media only screen and (max-width: 768px) {
+  #title-lokasi{
+    font-size: 30px;
+  }
+  #content-lokasi{
+    max-width:  80%;
+  }
+}
+@media only screen and (max-width: 992px) {
+ 
+  #content-lokasi{
+    max-width:  90%;
+  }
+}

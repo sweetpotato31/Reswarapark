@@ -5,14 +5,14 @@
         <div class="section-title text-center">
             <h3 style="font-size: 19px;font-family: 'SortsMillGoudy-Regular', sans-serif;margin-bottom: unset;">Artikel Terbaru</h3>
         </div>
-        <div class="swiper testimonial-swiper" style="max-width: 42%;">
+        <div class="swiper testimonial-swiper" id="artikel-desc" style="max-width: 42%;">
             <div class="swiper-wrapper">
-            <div class="swiper-slide">
-                <p class="text-center" style="font-size: 13px;color:#818274;font-family:'SortsMillGoudy-Regular'">Reswara Park - Where modern design meets the serenity of the tropics</p>
-            </div>
+                <div class="swiper-slide">
+                    <p class="text-center" style="font-size: 13px;color:#818274;font-family:'SortsMillGoudy-Regular'">Reswara Park - Where modern design meets the serenity of the tropics</p>
+                </div>
             </div>
         </div>
-        <div class="row">
+        <div class="row justify-content-center">
             <div class="card card-artikel px-0 pb-5 m-3" style="width:310px">
                 <div class="p-3">
                     <img class="card-img-top" src="images/home3.png" alt="Card image" style="width:100%;">

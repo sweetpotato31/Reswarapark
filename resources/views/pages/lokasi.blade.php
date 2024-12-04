@@ -3,9 +3,9 @@
 <section id="customers-reviews" class="position-relative padding-large">
     <div class="container col-md-7 mt-5">
         <div class="section-title mb-4 text-center mt-5">
-        <h2 class="mb-4 mt-5" style="font-size:43px;color: black;">Rute Menuju Reswara Park</h2>
+        <h2 id="title-lokasi" class="mb-4 mt-5">Rute Menuju Reswara Park</h2>
         </div>
-        <div class="swiper testimonial-swiper" style="max-width: 62%;">
+        <div id="content-lokasi" class="swiper testimonial-swiper">
             <div class="swiper-wrapper">
                 <div class="swiper-slide text-center">
                     <a href="https://maps.app.goo.gl/YyebrxvfrWmQtBbT7" target="_blank">

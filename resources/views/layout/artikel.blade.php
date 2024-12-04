@@ -41,9 +41,7 @@
                 <i class="fa-brands fa-whatsapp"></i>
             </a>
         </div>
-        <div class="container">
             @yield('content')
-        </div>
         @include('includes.script')
     </body>
 </html>

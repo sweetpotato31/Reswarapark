@@ -1,14 +1,14 @@
 @extends('layout.index')
 @section('content')
     <section id="customers-reviews" class="position-relative padding-large">
-        <div class="container col-md-7">
-            <div class="section-title mb-4 text-center">
-                <h2 class="mb-4" style="font-size:43px;color: black;">Where modern design meets the serenity of the tropics</h2>
+        <div class="container col-lg-9 col-xl-9">
+            <div id="title-keunggulan" class="section-title mb-4 text-center">
+                <h2 class="mb-4">Where modern design meets the serenity of the tropics</h2>
             </div>
-            <div class="swiper testimonial-swiper" style="max-width: 42%;">
+            <div id="desc-keunggulan" class="swiper testimonial-swiper">
                 <div class="swiper-wrapper">
                 <div class="swiper-slide">
-                    <p class="text-center" style="font-size: 17px;color:#818274;font-family: 'SortsMillGoudy-Regular'">Lokasi strategis di JI. Mini III, Bambu Apus, Kec. Cipayung, Kota Jakarta Timur. Hadir dengan hunian berkonsep modern tropis dan premium serta lokasi yang strategis dan aksesibilitas yang mudah dijangkau darimana saja menggunakan transportasi apapun membuat Reswara Park menjadi  pilihan tempat tinggal yang tepat.</p>
+                    <p class="text-center">Lokasi strategis di JI. Mini III, Bambu Apus, Kec. Cipayung, Kota Jakarta Timur. Hadir dengan hunian berkonsep modern tropis dan premium serta lokasi yang strategis dan aksesibilitas yang mudah dijangkau darimana saja menggunakan transportasi apapun membuat Reswara Park menjadi  pilihan tempat tinggal yang tepat.</p>
                 </div>
                 </div>
             </div>
@@ -77,7 +77,7 @@
             
                 <div class="col-lg-4">
                     <div class="my-2">
-                        <div class="icon-box pe-0">
+                        <div class="icon-box">
                             <div class="icon-box-icon">
                                 <i class="fas fa-random"></i>
                             </div>
