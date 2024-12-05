@@ -3,8 +3,8 @@
 <section id="type-unit" class="position-relative padding-large" style="background-color: #EEEEEE;">
     <div class="container col-md-12">
         <div class="section-title text-center">
-            <h2 style="font-size: 50px;font-family: 'SortsMillGoudy-Regular', sans-serif;margin-bottom: unset;font-weight: 500;">Pilihan Unit</h2>
-            <h2 style="font-size: 55px;font-family: 'SortsMillGoudy-Regular', sans-serif;margin-bottom: unset;">Perumahan Reswara Park</h2>
+            <h2 id="title-unit" style="font-weight: 500;">Pilihan Unit</h2>
+            <h2 id="title-unit">Perumahan Reswara Park</h2>
         </div>
         <div class="testimonial-swiper">
             <div class="">
@@ -47,11 +47,11 @@
                     foreach ($cards as $index => $card) {
                         if ($cardCount % 3 == 0) {
                             if ($cardCount > 0) echo '</div>';
-                            echo '<div class="swiper-slide d-flex justify-content-center">';
+                            echo '<div id="swiper-unit" class="swiper-slide d-flex justify-content-center">';
                         }
                 ?>
 
-                <div class="card-unit mx-3">
+                <div id="card-unit" class="card-unit mx-3">
                     <img src="<?= $card['image'] ?>" class="image">
                     <div class="text-default">
                         <div style="position: absolute;bottom: 25px;left:25px">

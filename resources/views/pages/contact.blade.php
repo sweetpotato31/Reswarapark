@@ -1,27 +1,36 @@
 @extends('layout.index')
 @section('content')
+<style>
+    html, body {
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        height: auto; /* Biarkan tinggi menyesuaikan dengan konten */
+        overflow-x: hidden; /* Mencegah scroll horizontal */
+    }
+</style>
 <section id="billboard" class="position-relative align-items-center bg-light-gray">
     <div class="swiper-container" style="width: 100%; height: 80vh;">
         <div class="container-fluid offset-md-3 col-md-6 position-absolute mt-5" style="z-index: 10;">
             <div class="section-title text-center d-flex flex-column align-items-center" style="margin-top: 8rem">
-                <h3 style="font-size: 19px;color: #fff;font-family: 'SortsMillGoudy-Regular', sans-serif;">Miliki segera unitmu & Dapatkan penawaran special anda!</h3>
+                <h3 id="title-contact">Miliki segera unitmu & Dapatkan penawaran special anda!</h3>
             </div>
             <div class="swiper testimonial-swiper">
                 <div class="swiper-wrapper">
                     <div class="swiper-slide">
                         <div class="d-flex justify-content-center">
-                            <p style="color:#fff;font-size: 19px;font-family: 'SortsMillGoudy-Regular', sans-serif;text-align: center;margin-top: 0;">Price Start From 1,9 M!</p>
+                            <p id="span-contact">Price Start From 1,9 M!</p>
                         </div>
                         <div class="">
-                            <h2 style="color:#fff;font-family: 'SortsMillGoudy-Regular', sans-serif;text-align: center;font-size: 40px;">
+                            <h2 id="content-contact">
                                 Kunjungi Marketing Gallery Kami,
                             </h2>
-                            <h2 style="color:#fff;font-family: 'SortsMillGoudy-Regular', sans-serif;text-transform:unset;text-align: center;font-size: 40px;">
+                            <h2 id="content-contact">
                                 Untuk Info Lebih Lanjut atau Hubungi WhatsApp Kami
                             </h2>
                         </div>
                         <div class="d-flex justify-content-center mt-5">
-                            <a class="py-3 px-5" href="https://wa.me/6287877776333" target="_blank" style="color:#fff;font-family: Roboto, sans-serif;text-align: center;font-size: 18px;background-color: #D9B770;width: fit-content;font-weight: 500;border-radius: 50px;">
+                            <a id="button-contact" class="py-3 px-5" href="https://wa.me/6287877776333" target="_blank">
                                 <i class="fa-brands fa-whatsapp me-2"></i>Contact Us!
                             </a>
                         </div>
