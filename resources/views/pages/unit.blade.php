@@ -34,7 +34,7 @@
                 opacity: 1;
             }
         </style>
-        <div class="swiper-container">
+        <div id="unit-large-view" class="swiper-container">
             <div class="swiper-wrapper">
                 <?php
                     $cards = [
@@ -82,12 +82,60 @@
             <div class="swiper-button-next" style="color: #3A3C25;"></div>
             <div class="swiper-button-prev" style="color: #3A3C25;"></div>
         </div>
+        <div id="unit-small-view" class="swiper-container">
+            <div class="swiper-wrapper">
+            <?php
+                    $cards = [
+                        ['image' => 'images/Pilihan Unit_Tipe Ranjana.png', 'name' => 'Ranjana', 'type' => '84/215'],
+                        ['image' => 'images/Pilihan Unit_Tipe Ragnala.png', 'name' => 'Ragnala', 'type' => '60/155'],
+                        ['image' => 'images/Pilihan Unit_Tipe Raksaka.png', 'name' => 'Raksaka', 'type' => '60/84']
+                    ];
+                
+                    $cardCount = 0;
+                    foreach ($cards as $index => $card) {
+                        if ($cardCount % 1 == 0) {
+                            if ($cardCount > 0) echo '</div>';
+                            echo '<div id="swiper-unit" class="swiper-slide d-flex justify-content-center">';
+                        }
+                ?>
+
+                <div id="card-unit" class="card-unit mx-3">
+                    <img src="<?= $card['image'] ?>" class="image">
+                    <div class="text-default">
+                        <div style="position: absolute;bottom: 25px;left:25px">
+                            <h4><?= $card['name'] ?></h4>
+                            <p>Type <?= $card['type'] ?></p>
+                        </div>
+                    </div>
+                    <div class="overlay">
+                        <div class="text">
+                            <h4><?= $card['name'] ?></h4>
+                            <p>Type <?= $card['type'] ?></p>
+                            <button class="button-unit mt-3 border-0" id="open-popup-<?= strtolower($card['name']) ?>">Lihat Detail</button>
+                            <a href="https://wa.me/6287877776333" class="button-price">Tanya Harga</a>
+                        </div>
+                    </div>
+                </div>
+
+                <?php
+                    $cardCount++;
+                    }
+                    echo '</div>';
+                ?>
+            </div>
+            
+            <!-- Add Pagination -->
+            <div class="swiper-pagination"></div>
+            <!-- Add Navigation -->
+            <div class="swiper-button-next" style="color: #3A3C25;"></div>
+            <div class="swiper-button-prev" style="color: #3A3C25;"></div>
+        </div>
     </div>
 </section>
 <section id="type-unit" class="position-relative padding-large pt-0" style="background-color: #EEEEEE;">
     <div class="container col-md-12">
         <div class="section-title text-center">
-            <h2 style="font-size: 55px;font-family: 'SortsMillGoudy-Regular', sans-serif;margin-bottom: unset;">Ruko Reswara Park</h2>
+            <h2 id="title-ruko">Ruko Reswara Park</h2>
         </div>
         <div class="testimonial-swiper">
             <div class="">
@@ -129,7 +177,7 @@
 <section id="customers-reviews" class="position-relative padding-large pt-0" style="background-color: #EEEEEE;">
     <div class="container col-md-7">
         <div class="section-title mb-5 text-center">
-        <h2 class="mb-4" style="font-size:48px;color: black;text-transform: none;">Spesifikasi dan Siteplan</h2>
+        <h2 id="title-spek" class="mb-4">Spesifikasi dan Siteplan</h2>
         </div>
         <div class="swiper-container spek-carousel">
             <div class="swiper-wrapper">

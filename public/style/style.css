@@ -1894,16 +1894,39 @@ select#input-sort {
   font-family: 'SortsMillGoudy-Regular', sans-serif;
   margin-bottom: unset;
 }
-
+#title-unit-spek{
+  font-size:48px;
+  color: black;
+  text-transform: none;
+}
+#title-unit-ruko{
+  font-size: 55px;
+  font-family: 'SortsMillGoudy-Regular', sans-serif;
+  margin-bottom: unset;
+}
+#unit-small-view{
+  display: none;
+}
 @media only screen and (max-width: 768px){
   #title-unit{
     font-size:30px
   }
+  #title-ruko{
+    font-size:30px
+  }
+  #title-spek{
+    font-size:30px
+  }
   #swiper-unit {
     width: 100% !important; /* Pastikan slide memenuhi lebar container */
-}
-
-#card-unit {
-    margin: 0 auto; /* Pusatkan kartu */
-}
+  }
+  #card-unit {
+      margin: 0 auto; /* Pusatkan kartu */
+  }
+  #unit-large-view{
+    display: none;
+  }
+  #unit-small-view{
+    display: block;
+  }
 }
