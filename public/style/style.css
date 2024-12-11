@@ -1904,7 +1904,7 @@ select#input-sort {
   font-family: 'SortsMillGoudy-Regular', sans-serif;
   margin-bottom: unset;
 }
-#unit-small-view{
+#unit-small-view, #ruko-small-view{
   display: none;
 }
 @media only screen and (max-width: 768px){
@@ -1923,10 +1923,37 @@ select#input-sort {
   #card-unit {
       margin: 0 auto; /* Pusatkan kartu */
   }
-  #unit-large-view{
+  .popup-content-background p {
+      font-size: 13px; /* Ukuran teks */
+  }
+  .popup-content-background{
+    margin-top: unset;
+  }
+  #unit-large-view, #ruko-large-view{
     display: none;
   }
-  #unit-small-view{
+  #unit-small-view, #ruko-small-view{
     display: block;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 992px){
+  .button-unit {
+    background-color: red;
+    color: white;
+    padding: 10px 15px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    font-size: 10px;
+  }
+  .button-price {
+    background-color: rgb(87, 221, 9);
+    color: white;
+    padding: 12px 15px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    font-size: 10px;
   }
 }

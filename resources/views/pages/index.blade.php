@@ -18,7 +18,7 @@
             <a href="{{route('unit')}}" class="btn mt-5 py-3">Info Lanjut <span><i class="fas fa-angle-right ms-2"></i></span></a>
         </div>
         <div class="swiper-wrapper">
-            <div class="swiper-slide" style="background-image: url(images/home1.jpg); background-size: cover; background-repeat: no-repeat; background-position: bottom; display: flex; align-items: center;">
+            <div class="swiper-slide" style="background-image: url(images/home1.webp); background-size: cover; background-repeat: no-repeat; background-position: bottom; display: flex; align-items: center;">
                 <div class="container ms-0">
                     <div class="row d-flex flex-column-reverse flex-md-row align-items-center">
                         <div class="col-md-12 mt-5 mt-md-0 text-center text-md-start">
@@ -26,7 +26,7 @@
                     </div>
                 </div>
             </div>
-            <div class="swiper-slide" style="background-image: url(images/home2.png); background-size: cover; background-repeat: no-repeat; background-position: bottom; display: flex; align-items: center;">
+            <div class="swiper-slide" style="background-image: url(images/home2.webp); background-size: cover; background-repeat: no-repeat; background-position: bottom; display: flex; align-items: center;">
                 <div class="container ms-0">
                     <div class="row d-flex flex-column-reverse flex-md-row align-items-center">
                         <div class="col-md-12 mt-5 mt-md-0 text-center text-md-start">
@@ -34,7 +34,7 @@
                     </div>
                 </div>
             </div>
-            <div class="swiper-slide" style="background-image: url(images/home3.png); background-size: cover; background-repeat: no-repeat; background-position: bottom; display: flex; align-items: center;">
+            <div class="swiper-slide" style="background-image: url(images/home3.webp); background-size: cover; background-repeat: no-repeat; background-position: bottom; display: flex; align-items: center;">
                 <div class="container ms-0">
                     <div class="row d-flex flex-column-reverse flex-md-row align-items-center">
                         <div class="col-md-12 mt-5 mt-md-0 text-center text-md-start">

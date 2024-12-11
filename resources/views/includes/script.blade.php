@@ -38,10 +38,14 @@
         });
         }
 
-        setupPopup('#open-popup-ragnala', '#popup-ragnala', '.close-popup');
-        setupPopup('#open-popup-ranjana', '#popup-ranjana', '.close-popup');
-        setupPopup('#open-popup-raksaka', '#popup-raksaka', '.close-popup');
-        setupPopup('#open-popup-ruko', '#popup-ruko', '.close-popup');
+        setupPopup('#open-popup-ragnala-large', '#popup-ragnala-large', '.close-popup');
+        setupPopup('#open-popup-ranjana-large', '#popup-ranjana-large', '.close-popup');
+        setupPopup('#open-popup-raksaka-large', '#popup-raksaka-large', '.close-popup');
+        setupPopup('#open-popup-ragnala-small', '#popup-ragnala-small', '.close-popup');
+        setupPopup('#open-popup-ranjana-small', '#popup-ranjana-small', '.close-popup');
+        setupPopup('#open-popup-raksaka-small', '#popup-raksaka-small', '.close-popup');
+        setupPopup('#open-popup-ruko-small', '#popup-ruko-small', '.close-popup');
+        setupPopup('#open-popup-ruko-large', '#popup-ruko-large', '.close-popup');
     });
     document.addEventListener("DOMContentLoaded", function() {
         const cards = document.querySelectorAll('.card-spek');

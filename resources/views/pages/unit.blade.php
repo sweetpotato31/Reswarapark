@@ -38,9 +38,9 @@
             <div class="swiper-wrapper">
                 <?php
                     $cards = [
-                        ['image' => 'images/Pilihan Unit_Tipe Ranjana.png', 'name' => 'Ranjana', 'type' => '84/215'],
-                        ['image' => 'images/Pilihan Unit_Tipe Ragnala.png', 'name' => 'Ragnala', 'type' => '60/155'],
-                        ['image' => 'images/Pilihan Unit_Tipe Raksaka.png', 'name' => 'Raksaka', 'type' => '60/84']
+                        ['image' => 'images/Pilihan Unit_Tipe Ranjana.png', 'name' => 'Ranjana-large', 'title' => 'Ranjana', 'type' => '84/215'],
+                        ['image' => 'images/Pilihan Unit_Tipe Ragnala.png', 'name' => 'Ragnala-large', 'title' => 'Ragnala', 'type' => '60/155'],
+                        ['image' => 'images/Pilihan Unit_Tipe Raksaka.png', 'name' => 'Raksaka-large', 'title' => 'Raksaka', 'type' => '60/84']
                     ];
                 
                     $cardCount = 0;
@@ -55,13 +55,13 @@
                     <img src="<?= $card['image'] ?>" class="image">
                     <div class="text-default">
                         <div style="position: absolute;bottom: 25px;left:25px">
-                            <h4><?= $card['name'] ?></h4>
+                            <h4><?= $card['title'] ?></h4>
                             <p>Type <?= $card['type'] ?></p>
                         </div>
                     </div>
                     <div class="overlay">
                         <div class="text">
-                            <h4><?= $card['name'] ?></h4>
+                            <h4><?= $card['title'] ?></h4>
                             <p>Type <?= $card['type'] ?></p>
                             <button class="button-unit mt-3 border-0" id="open-popup-<?= strtolower($card['name']) ?>">Lihat Detail</button>
                             <a href="https://wa.me/6287877776333" class="button-price">Tanya Harga</a>
@@ -86,9 +86,9 @@
             <div class="swiper-wrapper">
             <?php
                     $cards = [
-                        ['image' => 'images/Pilihan Unit_Tipe Ranjana.png', 'name' => 'Ranjana', 'type' => '84/215'],
-                        ['image' => 'images/Pilihan Unit_Tipe Ragnala.png', 'name' => 'Ragnala', 'type' => '60/155'],
-                        ['image' => 'images/Pilihan Unit_Tipe Raksaka.png', 'name' => 'Raksaka', 'type' => '60/84']
+                        ['image' => 'images/Pilihan Unit_Tipe Ranjana.png', 'name' => 'Ranjana-small', 'title' => 'Ranjana', 'type' => '84/215'],
+                        ['image' => 'images/Pilihan Unit_Tipe Ragnala.png', 'name' => 'Ragnala-small', 'title' => 'Ragnala', 'type' => '60/155'],
+                        ['image' => 'images/Pilihan Unit_Tipe Raksaka.png', 'name' => 'Raksaka-small', 'title' => 'Raksaka', 'type' => '60/84']
                     ];
                 
                     $cardCount = 0;
@@ -103,13 +103,13 @@
                     <img src="<?= $card['image'] ?>" class="image">
                     <div class="text-default">
                         <div style="position: absolute;bottom: 25px;left:25px">
-                            <h4><?= $card['name'] ?></h4>
+                            <h4><?= $card['title'] ?></h4>
                             <p>Type <?= $card['type'] ?></p>
                         </div>
                     </div>
                     <div class="overlay">
                         <div class="text">
-                            <h4><?= $card['name'] ?></h4>
+                            <h4><?= $card['title'] ?></h4>
                             <p>Type <?= $card['type'] ?></p>
                             <button class="button-unit mt-3 border-0" id="open-popup-<?= strtolower($card['name']) ?>">Lihat Detail</button>
                             <a href="https://wa.me/6287877776333" class="button-price">Tanya Harga</a>
@@ -144,7 +144,7 @@
             </div>
             </div>
         </div> 
-        <div class="swiper-container">
+        <div id="ruko-large-view" class="swiper-container">
             <div class="swiper-wrapper">
                 <div class="swiper-slide d-flex justify-content-center">
                     <div class="card-unit mx-3">
@@ -159,7 +159,35 @@
                             <div class="text">
                                 <h4>Unit Ruko</h4>
                                 <p>Type 60/155</p>
-                                <button class="button-unit mt-3 border-0" id="open-popup-ruko">Lihat Detail</button>
+                                <button class="button-unit mt-3 border-0" id="open-popup-ruko-large">Lihat Detail</button>
+                                <a href="https://wa.me/6287877776333" target="_blank" class="button-price">Tanya Harga</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Add Pagination -->
+            <div class="swiper-pagination"></div>
+            <!-- Add Navigation -->
+            <div class="swiper-button-next" style="color: #3A3C25;"></div>
+            <div class="swiper-button-prev" style="color: #3A3C25;"></div>
+        </div>
+        <div id="ruko-small-view" class="swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide d-flex justify-content-center">
+                    <div class="card-unit mx-3">
+                        <img src="images/Unit Ruko.png" class="image">
+                        <div class="text-default">
+                            <div class="" style="position: absolute;bottom: 25px;left:25px">
+                                <h4>Unit Ruko</h4>
+                                <p>Type 150/84</p>
+                            </div>
+                        </div>
+                        <div class="overlay">
+                            <div class="text">
+                                <h4>Unit Ruko</h4>
+                                <p>Type 60/155</p>
+                                <button class="button-unit mt-3 border-0" id="open-popup-ruko-small">Lihat Detail</button>
                                 <a href="https://wa.me/6287877776333" target="_blank" class="button-price">Tanya Harga</a>
                             </div>
                         </div>
@@ -200,7 +228,7 @@
         </div>
     </div>
 </section>
-<div id="popup-ragnala" class="popup-overlay">
+<div id="popup-ragnala-large" class="popup-overlay">
     <div class="popup-content-background d-flex" style="margin-top: 2cm;">
         <span class="close-popup">&times;</span>
         <img src="images/Pilihan Unit_Tipe Ragnala.png" alt="Rute The Reswara" width="500">
@@ -223,7 +251,7 @@
         </div>
     </div>
 </div>
-<div id="popup-ranjana" class="popup-overlay">
+<div id="popup-ranjana-large" class="popup-overlay">
     <div class="popup-content-background d-flex" style="margin-top: 2cm;">
         <span class="close-popup">&times;</span>
         <img src="images/Pilihan Unit_Tipe Ranjana.png" width="500">
@@ -247,7 +275,7 @@
         <!-- Tambahkan konten sesuai kebutuhan -->
     </div>
 </div>
-<div id="popup-raksaka" class="popup-overlay">
+<div id="popup-raksaka-large" class="popup-overlay">
     <div class="popup-content-background d-flex" style="margin-top: 2cm;">
         <span class="close-popup">&times;</span>
         <img src="images/Pilihan Unit_Tipe Raksaka.png" alt="Rute The Reswara" width="500">
@@ -271,10 +299,101 @@
         <!-- Tambahkan konten sesuai kebutuhan -->
     </div>
 </div>
-<div id="popup-ruko" class="popup-overlay">
+<div id="popup-ragnala-small" class="popup-overlay">
+    <div class="popup-content-background d-flex flex-column justify-content-center" style="margin-top: 2cm;">
+        <span class="close-popup">&times;</span>
+        <img src="images/Pilihan Unit_Tipe Ragnala.png" alt="Rute The Reswara" style="margin:1% auto; width: 100%; max-width: 400px;">
+        <div class="" style="margin-top: 2.5rem;margin-left: 2rem;">
+            <h5 style="font-weight: 700;">Ragnala</h5>
+            <div class="">
+                <p>TIPE RAGNALA (3 LANTAI)</p>
+                <br>
+                <p>Luas Tanah : 60 m</p>
+                <p>Luas Bangunan : 155 m</p>
+                <br>
+                <p>2 + 1 Kamar Tidur</p>
+                <p>3 + 1 Kamar Mandi</p>
+                <p>Carport untuk 2 Mobil</p>
+                <br>
+                <p>Ruang Keluarga</p>
+                <p>Ruang Makan</p>
+                <p>Dapur</p>
+            </div>
+        </div>
+    </div>
+</div>
+<div id="popup-ranjana-small" class="popup-overlay">
+    <div class="popup-content-background d-flex flex-column justify-content-center" style="margin-top: 2cm;">
+        <span class="close-popup">&times;</span>
+        <img src="images/Pilihan Unit_Tipe Ranjana.png" style="margin:1% auto; width: 100%; max-width: 400px;">
+        <div class="" style="margin-top: 2.5rem;margin-left: 2rem;">
+        <h5 style="font-weight: 700;">Ranjana</h5>
+        <div class="">
+            <p>TIPE RANJANA (3 LANTAI)</p>
+            <br>
+            <p>Luas Tanah : 84 m</p>
+            <p>Luas Bangunan : 215 m</p>
+            <br>
+            <p>3 + 1 Kamar Tidur</p>
+            <p>3 + 1 Kamar Mandi </p>
+            <p>Carport untuk 2 Mobil </p>
+            <br>
+            <p>Ruang Keluarga</p>
+            <p>Ruang Makan</p>
+            <p>Dapur</p>
+        </div>
+        </div>
+        <!-- Tambahkan konten sesuai kebutuhan -->
+    </div>
+</div>
+<div id="popup-raksaka-small" class="popup-overlay">
+    <div class="popup-content-background d-flex flex-column" style="margin-top: 2cm;">
+        <span class="close-popup">&times;</span>
+        <img src="images/Pilihan Unit_Tipe Raksaka.png" alt="Rute The Reswara" style="margin:1% auto; width: 100%; max-width: 400px;">
+        <div class="" style="margin-top: 2.5rem;">
+        <h5 style="font-weight: 700;">Raksaka</h5>
+        <div class="">
+            <p>TIPE RAKSAKA (2 LANTAI)</p>
+            <br>
+            <p>Luas Tanah : 60 m</p>
+            <p>Luas Bangunan : 84 m</p>
+            <br>
+            <p>2 Kamar Tidur</p>
+            <p>2 + 1 Kamar Mandi</p>
+            <p>Carport untuk 2 Mobil</p>
+            <br>
+            <p>Ruang Keluarga</p>
+            <p>Ruang Makan</p>
+            <p>Dapur</p>
+        </div>
+        </div>
+        <!-- Tambahkan konten sesuai kebutuhan -->
+    </div>
+</div>
+<div id="popup-ruko-large" class="popup-overlay">
     <div class="popup-content-background d-flex" style="margin-top: 2cm;">
         <span class="close-popup">&times;</span>
         <img src="images/Unit Ruko.png" alt="Rute The Reswara" width="500">
+        <div class="" style="margin-top: 2.5rem;margin-left: 2rem;">
+        <h5 style="font-weight: 700;">Ruko Reswara</h5>
+        <div class="">
+            <p>RUKO (2 LANTAI)</p>
+            <br>
+            <p>Luas Tanah : 70 m</p>
+            <p>Luas Bangunan : 123 m</p>
+            <br>
+            <p>Ruang Pantry</p>
+            <p>2 Kamar Mandi</p>
+            <p>Slot Parkir Mobil & Motor</p>
+        </div>
+        </div>
+        <!-- Tambahkan konten sesuai kebutuhan -->
+    </div>
+</div>
+<div id="popup-ruko-small" class="popup-overlay">
+    <div class="popup-content-background d-flex flex-column" style="margin-top: 2cm;">
+        <span class="close-popup">&times;</span>
+        <img src="images/Unit Ruko.png" alt="Rute The Reswara" style="margin:1% auto; width: 100%; max-width: 400px;">
         <div class="" style="margin-top: 2.5rem;margin-left: 2rem;">
         <h5 style="font-weight: 700;">Ruko Reswara</h5>
         <div class="">
